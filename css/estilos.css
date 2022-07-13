@@ -38,16 +38,18 @@
 }
 
 .titulo {
+    display: grid;
     font-size: 2rem;
-    font-weight: 600;
-    text-align: justify;
-    color: rgb(243, 14, 220);
+    font-weight: 800;
+    text-align: center;
+    color: rgb(252, 4, 4);
+     background-image: url("../img/5026563.jpg");
      
 }
 .fundo02 {
     position: absolute;
     top: 30vw;
-    width: 500px;
+    width: 500px; 
     height: 80%;
 }
 
