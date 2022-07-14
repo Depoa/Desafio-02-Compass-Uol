@@ -72,10 +72,15 @@ body {
     margin-bottom: 0.5rem;
 }
 
-input {
+.campo {
     background-color: aquamarine;
      padding-left: 10px;
-} 
+}
+
+.botao:hover {
+    background-color: rgb(85, 112, 104);
+    color: whitesmoke;
+}
 
 .calculadora {
     font-size: 2rem;

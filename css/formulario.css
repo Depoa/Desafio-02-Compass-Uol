@@ -8,7 +8,11 @@ main  {
     background-blend-mode: luminosity;
     height: 480px;
 }
-
+nav {
+    text-align:left;
+    width:150px;
+    
+    }
 
 .cabecalho {
     display: flex;

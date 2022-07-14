@@ -1,151 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Tintas</title>
     <link rel="stylesheet" href="css/reset.css">
-   <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-    <body>
-        <header class="cabecalho">
-            <img class="logo" src="img/IMG.png">
-            <div class="conteiner">
-                <ul class="caixa">
-                    <li class="caixa__link"><a href="index.html" class="link">Home</a>
-                    <li class="caixa__link"><a href="calculadora.html" class="link">Calculadora de Tintas</a>
-                    <li class="caixa__link"><a href="formulario.html" class="link">Formulário</a>
+
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="img/IMG.png">
+        <div class="conteiner">
+            <ul class="caixa">
+                <li class="caixa__link"><a href="index.html" class="link">Home</a>
+                <li class="caixa__link"><a href="calculadora.html" class="link">Calculadora de Tintas</a>
+                <li class="caixa__link"><a href="formulario.html" class="link">Formulário</a>
+            </ul>
+        </div>
+    </header>
+    <main>
+
+        <section class="calculadora">
+            <h1>Calculadora de tintas</h1>
+
+        </section>
+
+        <section class="paredes">
+
+            <div class="parede-container">
+                <ul class="parede" id="parede1">
+                    <h2>Parede1</h2><br>
+                    <li class="infolargura inputs__label01">
+                        <h3>Largura1</h3>
+                       <input id="largura1" class="inputs__input campo" type="number" placeholder="Largura" step="0.1"
+                            min="0" max="10">
+                    </li>
+                    <li class="infoaltura inputs__label01">
+                        <h3>Altura1</h3>
+                        <input id="altura1" class="inputs__input campo" type="number" placeholder="Altura" step="0.1"
+                            min="0" max="10">
+                    </li>
                 </ul>
             </div>
-        </header>
-<main>
-    
-    <section class="calculadora">
-        <h1>Calculadora de tintas</h1>
+            <div class="parede-container">
+                <ul class="parede" id="parede2">
+                    <h2>Parede2</h2><br>
+                    <li class="infolargura inputs__label02">
+                        <h3>Largura2</h3>
+                        <input id="largura2" class="inputs__input campo" type="number" placeholder="Largura" step="0.1"
+                            min="0" max="10">
+                    </li>
+                    <li class="infoaltura inputs__label02">
+                        <h3>Altura2</h3>
+                        <input id="altura1" class="inputs__input campo" type="number" placeholder="Altura" step="0.1"
+                            min="0" max="10">
+                    </li>
+                    <li class="infoaltura inputs__label02">
+                </ul>
+            </div>
+            <div class="parede-container">
+                <ul class="parede" id="parede3">
+                    <h2>Parede3</h2><br>
+                    <li class="infolargura inputs__label03">
+                        <h3>Largura3</h3>
+                        <input id="largura3" class="inputs__input campo" type="number" placeholder="Largura" step="0.1"
+                            min="0" max="10">
+                    </li>
+                    <li class="infoaltura inputs__label03">
+                        <h3>Altura3</h3>
+                        <input id="altura1" class="inputs__input campo" type="number" placeholder="Altura" step="0.1"
+                            min="0" max="10">
+                    </li>
+                    <li class="infoaltura inputs__label03">
 
-    </section>
+                </ul>
+            </div>
+            <div class="parede-container">
+                <ul class="parede" id="parede4">
+                    <h2>Parede4</h2>
+                    <li class="infolargura inputs__label01">
+                        <h3>Largura4</h3><br>
+                        <input id="largura4" class="inputs__input campo" type="number" placeholder="Largura" step="0.1"
+                            min="0" max="10">
+                    </li>
+                    <li class="infoaltura inputs__label04">
+                        <h3>Altura4</h3>
+                        <input id="altura4" class="inputs__input campo" type="number" placeholder="Altura" step="0.1"
+                            min="0" max="10">
+                    </li>
+                    <li class="infoaltura inputs__label04">
 
-    <section class="paredes">
-<div class="parede-container">
-    <ul class="parede" id="parede1">
-            
-        <li class="infolargura inputs__label01">
-        <h2>Parede1</h2>
-        Largura<input id="largura1" class="inputs__input" type="number" placeholder="Largura" step="0.1" min="0" max="10"></li>
+                </ul>
+            </div>
+            <div class="parede-container">
+                <ul class="portasJanelas" id="portasJanelas">
+                    <h2>Portas/Janelas</h2><br>
+                    <li class="infoportas inputs__label05">
+                        <h3>Portas</h3>
+                        <input id="portas" class="inputs__input campo" type="number" placeholder="Nº de Portas"
+                            step="0.1" min="0" max="10">
+                    </li>
+                    <li class="infojanelas inputs__label05">
+                        <h3>Janelas</h3>
+                        <input id="janelas" class="inputs__input campo" type="number" placeholder="Nº de Janelas"
+                            step="0.1" min="0" max="10">
+                    </li>
+                    <li class="infoaltura inputs__label01">
 
-        <li class="infoaltura inputs__label01">
-        Altura<input id="altura" class="inputs__input" type="number" placeholder="Altura" step="0.1" min="0" max="10"></li>
-        
-        <li class="infoporta inputs__label01">
-        Nº Portas<input id="porta" class="inputs__input" type="number" placeholder="Quantas Portas?" value=""></li>
+                    </li>
+                 
+                    <input id=Calcular class="inputs__input botao" type="button" value="Calcular">
+                </ul>
+            </div>
+        </section>
 
-        <li class="infojanela inputs__label01">
-        Nº Janelas<input id="janela" class="inputs__input" type="number" placeholder="Quantas Janelas?" value=""></li>
-        
-        <li class="infototal inputs__label01">
-        Tinta Necessária: <input id="resultado" class="inputs__input" type="number" placeholder="Área Total"  name="sumresult"></li>
-    </ul> 
-</div>
-<div class="parede-container">
-    <ul class="parede" id="parede2">
-            
-        <li class="infolargura inputs__label01">
-        <h2>Parede2</h2>
-        Largura<input id="largura" class="inputs__input" type="number" placeholder="Largura" step="0.1" min="0" max="10"></li>
+        <section class="resultadofinal">
 
-        <li class="infoaltura inputs__label01">
-        Altura<input id="altura" class="inputs__input" type="number" placeholder="Altura" step="0.1" min="0" max="10"></li>
-        
-        <li class="infoporta inputs__label01">
-        Nº Portas<input id="porta" class="inputs__input" type="number" placeholder="Quantas Portas?" value=""></li>
+            <div class="container-resultado">
+                <h3 class="resultado-titulo-valor">Tinta necessária</h3>
+                <input id="tinta-total" type="number" placeholder="Quantidade de Tinta">
+            </div>
+            <div class="container-resultado">
+                <h3 class="resultado-titulo-valor">Lata de 18L</h3>
+                <input id="tinta-total" type="number" placeholder="Quantidade de Tinta">
+            </div>
+            <div class="container-resultado">
+                <h3 class="resultado-titulo-valor">Lata de 3.6L</h3>
+                <input id="tinta-total" type="number" placeholder="Quantidade de Tinta">
+            </div>
+            <div class="container-resultado">
+                <h3 class="resultado-titulo-valor">Lata de 2.5L</h3>
+                <input id="tinta-total" type="number" placeholder="Quantidade de Tinta">
+            </div>
+            <div class="container-resultado">
+                <h3 class="resultado-titulo-valor">Lata de 0.5L</h3> <input id="tinta-total" type="number"
+                    placeholder="Quantidade de Tinta">
+                <h3 class="resultado-titulo-valor"></h3>
+            </div>
 
-        <li class="infojanela inputs__label01">
-        Nº Janelas<input id="janela" class="inputs__input" type="number" placeholder="Quantas Janelas?" value=""></li>
-        
-        <li class="infototal inputs__label01">
-        Tinta Necessária: <input id="resultado" class="inputs__input" type="number" placeholder="Área Total"  name="sumresult"></li>
-    </ul> 
-</div>
-
+        </section>
 
 
-<div class="parede-container">
-    <ul class="paredeC" id="parede3">
-        <li class="infolargura inputs__label">
-        <h2>Parede3</h2>
-        Largura<input id="largura" class="inputs__input" type="number" placeholder="Largura" step="0.1" min="0" max="10"></li>
-
-        <li class="infoaltura inputs__label">
-        Altura<input id="altura" class="inputs__input" type="number" placeholder="Altura" step="0.1" min="0" max="10"></li>
-        
-        <li class="infoporta inputs__label">
-        Nº Portas<input id="porta" class="inputs__input" type="number" placeholder="Quantas Portas?" value=""></li>
-
-        <li class="infojanela inputs__label">
-        Nº Janelas<input id="janela" class="inputs__input" type="number" placeholder="Quantas Janelas?" value=""></li>
-        
-        <li class="infototal inputs__label">
-        Tinta Necessária: <input id="resultado" class="inputs__input" type="number" placeholder="Área Total"  name="sumresult"></li>
-    </ul>
-</div>
-<div class="parede-container">
-    <ul class="paredeD" id="parede4">
-        <li class="infolargura inputs__label">
-        <h2>Parede4</h2>
-        Largura<input id="largura" class="inputs__input" type="number" placeholder="Largura" step="0.1" min="0" max="10"></li>
-
-        <li class="infoaltura inputs__label">
-        Altura<input id="altura" class="inputs__input" type="number" placeholder="Altura" step="0.1" min="0" max="10"></li>
-        
-        <li class="infoporta inputs__label">
-        Nº Portas<input id="porta" class="inputs__input" type="number" placeholder="Quantas Portas?" value=""></li>
-
-        <li class="infojanela inputs__label">
-        Nº Janelas<input id="janela" class="inputs__input" type="number" placeholder="Quantas Janelas?" value=""></li>
-        
-        <li class="infototal inputs__label">
-        Tinta Necessária: <input id="resultado" class="inputs__input" type="number" placeholder="Área Total"  name="sumresult" ></li>
-        
-    </ul>
-</div>
-    </section>
-
-    <section class="resultadofinal">
-
-        <div class="container-resultado">
-            <h3 class="resultado-titulo-valor">Tinta necessária</h3>
-            <input id="tinta-total" type= "number" placeholder="Quantidade de Tinta" >
-        </div>
-        <div class="container-resultado">
-            <h3 class="resultado-titulo-valor">Lata de 18L</h3>
-            <input id="tinta-total" type= "number" placeholder="Quantidade de Tinta" >
-        </div>
-        <div class="container-resultado">
-            <h3 class="resultado-titulo-valor">Lata de 3.6L</h3>
-            <input id="tinta-total" type= "number" placeholder="Quantidade de Tinta" >
-        </div>
-        <div class="container-resultado">
-            <h3 class="resultado-titulo-valor">Lata de 2.5L</h3>
-            <input id="tinta-total" type= "number" placeholder="Quantidade de Tinta" >
-        </div>
-        <div class="container-resultado">
-            <h3 class="resultado-titulo-valor">Lata de 0.5L</h3> <input id="tinta-total" type= "number" placeholder="Quantidade de Tinta">
-            <h3 class="resultado-titulo-valor"></h3>
-        </div>
-    
-    </section>
-
-    
     </main>
 
     <footer class="rodape">
-        <p class="rodape__texto">Av. Assis Brasil, 244 Porto Alegre-RS<p>
-        <p class="rodape__texto">Fone:(51) 9 9503-0852<p>
-        <p class="rodape__texto">msctintas@yahoo.com.br<p>
+        <p class="rodape__texto">Av. Assis Brasil, 244 Porto Alegre-RS
+        <p>
+        <p class="rodape__texto">Fone:(51) 9 9503-0852
+        <p>
+        <p class="rodape__texto">msctintas@yahoo.com.br
+        <p>
     </footer>
-<!--mamam-->
-        <script src="calculadora.js"></script>
+    <!--mamam-->
+    <script src="calculadora.js"></script>
 
-    </body>
+</body>
+
 </html>
