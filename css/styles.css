@@ -53,6 +53,8 @@ body {
 
 .parede {
     width: 100%;
+    color: #144c28;
+    font-variant-numeric: diagonal-fractions;
 }
 
 .inputs__label01 {
@@ -70,11 +72,14 @@ body {
 .inputs__input {
     width: 100%;
     margin-bottom: 0.5rem;
+    border: ridge;
+    background-color: rgb(25, 174, 124);
 }
 
 .campo {
     background-color: aquamarine;
      padding-left: 10px;
+     border: ridge;
 }
 
 .botao:hover {
@@ -93,7 +98,7 @@ body {
     justify-content:space-evenly;
     padding: 2rem;
 }
-
+.tinta-total
 .resultado-titulo-valor {
     width: 200px;
 

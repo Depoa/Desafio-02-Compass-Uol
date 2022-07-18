@@ -1,5 +1,7 @@
 var areaParede1 = calcularAreaParede1();
-var largura1 = document.getElementById("#largura1").value;
+var largura1 = parseFloat(document.getElementById("largura1"));
+console.log(largura1)
+
 var altura1 = document.getElementById("#altura1").value;
 
 areaParede1 = largura1 + altura1;
@@ -98,3 +100,13 @@ distribuirLatas;
 
 if (lataG > 0) {
     document.getElementById("tinta-total").innerHTML = lataG;*/
+
+    const largura1 = document.querySelector("#largura1");
+var largura = largura1.value
+const largura2 = document.querySelector("#largura2");
+const largura3 = document.querySelector("#largura3");
+const largura4 = document.querySelector("#largura4");
+var altura1 = document.querySelector("#altura1");
+var altura2 = document.querySelector("#altura2");
+var altura3 = document.querySelector("#altura3");
+var altura4 = document.querySelector("#altura4");

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Tintas</title>
+    <title>Calculad1ra de Tintas</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -34,14 +33,15 @@
                 <ul class="parede" id="parede1">
                     <h2>Parede1</h2><br>
                     <li class="infolargura inputs__label01">
-                        <h3>Largura1</h3>
-                       <input id="largura1" class="inputs__input campo" type="number" placeholder="Largura" step="0.1"
-                            min="0" max="10">
+                    <label for="largura1">Largura</label>
+                       <input id="largura1" class="inputs__input campo" type="number" name="largura" placeholder="Largura" step="0.1"
+                            min="0" max="10" value="">
+                        label
                     </li>
                     <li class="infoaltura inputs__label01">
                         <h3>Altura1</h3>
                         <input id="altura1" class="inputs__input campo" type="number" placeholder="Altura" step="0.1"
-                            min="0" max="10">
+                            min="0" max="10" value="">
                     </li>
                 </ul>
             </div>
@@ -121,28 +121,30 @@
 
             <div class="container-resultado">
                 <h3 class="resultado-titulo-valor">Tinta necessária</h3>
-                <input id="tinta-total" type="number" placeholder="Quantidade de Tinta">
+            </span> <input readonly id="tinta-total" type="text" placeholder="Quantidade de Tinta" autocomplete="off"  maxlength="6">
             </div>
             <div class="container-resultado">
                 <h3 class="resultado-titulo-valor">Lata de 18L</h3>
-                <input id="tinta-total" type="number" placeholder="Quantidade de Tinta">
+            </span> <input readonly id="tinta-total" type="text" placeholder="Quantidade de Tinta" autocomplete="off"  maxlength="6">
             </div>
             <div class="container-resultado">
                 <h3 class="resultado-titulo-valor">Lata de 3.6L</h3>
-                <input id="tinta-total" type="number" placeholder="Quantidade de Tinta">
+                </span> <input readonly id="tinta-total" type="text" placeholder="Quantidade de Tinta" autocomplete="off"  maxlength="6">
             </div>
             <div class="container-resultado">
                 <h3 class="resultado-titulo-valor">Lata de 2.5L</h3>
-                <input id="tinta-total" type="number" placeholder="Quantidade de Tinta">
+            </span> <input readonly id="tinta-total" type="text" placeholder="Quantidade de Tinta" autocomplete="off"  maxlength="6">
             </div>
             <div class="container-resultado">
-                <h3 class="resultado-titulo-valor">Lata de 0.5L</h3> <input id="tinta-total" type="number"
-                    placeholder="Quantidade de Tinta">
+                <h3 class="resultado-titulo-valor">Lata de 0.5L</h3> 
+            </span> <input readonly id="tinta-total" type="text" placeholder="Quantidade de Tinta" autocomplete="off"  maxlength="6">
                 <h3 class="resultado-titulo-valor"></h3>
+                
             </div>
 
         </section>
-
+       
+     
 
     </main>
 
@@ -158,5 +160,4 @@
     <script src="calculadora.js"></script>
 
 </body>
-
 </html>
