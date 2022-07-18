@@ -31,12 +31,11 @@
 
             <div class="parede-container">
                 <ul class="parede" id="parede1">
-                    <h2>Parede1</h2><br>
+                    <h2>parede1</h2><br>
                     <li class="infolargura inputs__label01">
-                    <label for="largura1">Largura</label>
+                    <label for="largura1">largura1</label>
                        <input id="largura1" class="inputs__input campo" type="number" name="largura" placeholder="Largura" step="0.1"
                             min="0" max="10" value="">
-                        label
                     </li>
                     <li class="infoaltura inputs__label01">
                         <h3>Altura1</h3>
@@ -55,7 +54,7 @@
                     </li>
                     <li class="infoaltura inputs__label02">
                         <h3>Altura2</h3>
-                        <input id="altura1" class="inputs__input campo" type="number" placeholder="Altura" step="0.1"
+                        <input id="altura2" class="inputs__input campo" type="number" placeholder="Altura" step="0.1"
                             min="0" max="10">
                     </li>
                     <li class="infoaltura inputs__label02">
@@ -71,7 +70,7 @@
                     </li>
                     <li class="infoaltura inputs__label03">
                         <h3>Altura3</h3>
-                        <input id="altura1" class="inputs__input campo" type="number" placeholder="Altura" step="0.1"
+                        <input id="altura3" class="inputs__input campo" type="number" placeholder="Altura" step="0.1"
                             min="0" max="10">
                     </li>
                     <li class="infoaltura inputs__label03">
@@ -100,19 +99,19 @@
                     <h2>Portas/Janelas</h2><br>
                     <li class="infoportas inputs__label05">
                         <h3>Portas</h3>
-                        <input id="portas" class="inputs__input campo" type="number" placeholder="Nº de Portas"
+                        <input id="portas" class="inputs__input campo" type="number"  placeholder="Nº de Portas"
                             step="0.1" min="0" max="10">
                     </li>
                     <li class="infojanelas inputs__label05">
                         <h3>Janelas</h3>
-                        <input id="janelas" class="inputs__input campo" type="number" placeholder="Nº de Janelas"
+                        <input id="janelas" class="inputs__input campo" type="number"   placeholder="Nº de Janelas"
                             step="0.1" min="0" max="10">
                     </li>
                     <li class="infoaltura inputs__label01">
 
                     </li>
                  
-                    <input id=Calcular class="inputs__input botao" type="button" value="Calcular">
+                    <input id=Calcular class="inputs__input botao" onclick="calcular()" type="button" value="Calcular">
                 </ul>
             </div>
         </section>
@@ -120,24 +119,25 @@
         <section class="resultadofinal">
 
             <div class="container-resultado">
-                <h3 class="resultado-titulo-valor">Tinta necessária</h3>
-            </span> <input readonly id="tinta-total" type="text" placeholder="Quantidade de Tinta" autocomplete="off"  maxlength="6">
+                <h3 class="resultado-titulo-valor">Tinta necessária (litros)</h3>
+            </span> 
+            <h3 class="resultados" id="tinta-total">0</h3>
             </div>
             <div class="container-resultado">
                 <h3 class="resultado-titulo-valor">Lata de 18L</h3>
-            </span> <input readonly id="tinta-total" type="text" placeholder="Quantidade de Tinta" autocomplete="off"  maxlength="6">
+            </span> <input readonly id="tinta-totala" type="text" placeholder="Quantidade de Tinta" autocomplete="off"  maxlength="6">
             </div>
             <div class="container-resultado">
                 <h3 class="resultado-titulo-valor">Lata de 3.6L</h3>
-                </span> <input readonly id="tinta-total" type="text" placeholder="Quantidade de Tinta" autocomplete="off"  maxlength="6">
+                </span> <input readonly id="tinta-totala" type="text" placeholder="Quantidade de Tinta" autocomplete="off"  maxlength="6">
             </div>
             <div class="container-resultado">
                 <h3 class="resultado-titulo-valor">Lata de 2.5L</h3>
-            </span> <input readonly id="tinta-total" type="text" placeholder="Quantidade de Tinta" autocomplete="off"  maxlength="6">
+            </span> <input readonly id="tinta-totala" type="text" placeholder="Quantidade de Tinta" autocomplete="off"  maxlength="6">
             </div>
             <div class="container-resultado">
                 <h3 class="resultado-titulo-valor">Lata de 0.5L</h3> 
-            </span> <input readonly id="tinta-total" type="text" placeholder="Quantidade de Tinta" autocomplete="off"  maxlength="6">
+            </span> <input readonly id="tinta-totala" type="text" placeholder="Quantidade de Tinta" autocomplete="off"  maxlength="6">
                 <h3 class="resultado-titulo-valor"></h3>
                 
             </div>
@@ -149,14 +149,12 @@
     </main>
 
     <footer class="rodape">
-        <p class="rodape__texto">Av. Assis Brasil, 244 Porto Alegre-RS
-        <p>
-        <p class="rodape__texto">Fone:(51) 9 9503-0852
-        <p>
-        <p class="rodape__texto">msctintas@yahoo.com.br
-        <p>
+        <p class="rodape__texto">Av. Assis Brasil, 244 Porto Alegre-RS<p>
+        <p class="rodape__texto">Fone:(51) 9 9503-0852<p>
+        <p class="rodape__texto">msctintas@yahoo.com.br<p>
+        <p class="rodape__texto">copyright ©️2022 msc tintas<p>
     </footer>
-    <!--mamam-->
+    <!--   -->
     <script src="calculadora.js"></script>
 
 </body>

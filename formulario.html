@@ -20,99 +20,94 @@
         </div>
 	
     </header>
-	
-	<div class="fundo">
+	<main>
+		<div class="fundo">
 		
-		<div class="titulo">
-		  <h2>Criar Uma Conta</h2>
-		</div>
-  
-		<form id="form" class="form">
-			<div class=" geral "></div>
-		  <div class="form-control">
-			<label for="name">Nome Completo</label>
-			<input
-			 type="text"
-			  id="name"
-			  placeholder="Digite seu nome e sobrenome..."
-			/>
-			<i class="fas fa-exclamation-circle"></i>
-			<i class="fas fa-check-circle"></i>
-			<small>Mensagem de erro</small>
-		  </div>
+			<div class="titulo">
+			  <h2>Criar Uma Conta</h2>
+			</div>
+	  
 			<form id="form" class="form">
-		  <div class="form-control">
-			<label for="endereco">Endereço</label>
-			<input
-			  type="text"
-			  id="endereco"
-			  placeholder="Digite seu endereço..."
-			/>
-			<i class="fas fa-exclamation-circle"></i>
-			<i class="fas fa-check-circle"></i>
-			<small>Mensagem de erro</small>
+					<div class="form-control">
+						<label for="name" class="label">Nome Completo</label>
+						<input type="text" id="name" required pattern="^([A-Z][a-z].* [A-Z][a-z].*)+$" title="Ex: Ana da Silva"  placeholder="Digite seu Nome e Sobrenome..." />
+						<div class="erro">
+							<i class="fas fa-exclamation-circle"></i>
+							<i class="fas fa-check-circle"></i>
+							<small>Mensagem de erro</small>
+						</div>
+					  </div>
+						<form id="form" class="form">
+					  <div class="form-control">
+						<label for="endereco" class="label">Endereço</label>
+						<input type="text" id="endereco" required pattern="(^(RUA|Rua|R.|AVENIDA|Avenida|AV.|TRAVESSA|Travessa|TRAV.|Trav.)[\w\s][^0-9|,]*)(((,\s|(N|n)º\s)([0-9/]+))|(\s?([0-9/]+)))+(.*?)$" title="Ex: Rua Manuel da Silva 234" placeholder="Digite seu endereço..."/>
+						<div class="erro">
+							<i class="fas fa-exclamation-circle"></i>
+							<i class="fas fa-check-circle"></i>
+							<small>Mensagem de erro</small>
+						</div>
+					  </div>
+			   <form id="form" class="form">
+					  <div class="form-control">
+						<label for="fone" class="label">Telefone</label>
+						<input type="text"id="fone" required pattern="^[1-9]{2}(?:[2-8]|9[1-9])[0-9]{3}[0-9]{4}$" title="Ex: xx999999999" placeholder="Digite seu telefone..."/>
+						<div class="erro">
+							<i class="fas fa-exclamation-circle"></i>
+							<i class="fas fa-check-circle"></i>
+							<small>Mensagem de erro</small>
+						</div>
+					  </div>
+					  <div class="form-control">
+						<label for="email" class="label">Email</label>
+						<input type="text" id="email" required pattern="[a-z0-9._%+-]{3,}@[a-z]{3,}([.]{1}[a-z]{2,}|[.]{1}[a-z]{2,}[.]{1}[a-z]{2,})" title="Ex: seuemail@.com"
+						 
+						required  placeholder="Digite seu email.." />
+						<div class="erro">
+							<i class="fas fa-exclamation-circle"></i>
+							<i class="fas fa-check-circle"></i>
+							<small>Mensagem de erro</small>
+						</div>
+					  </div>
+			  
+					  <div class="form-control">
+						<label for="password" class="label">Senha</label>
+						<input
+						  type="password"id="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+						  placeholder="Digite sua senha..."
+						/>
+						<div class="erro">
+							<i class="fas fa-exclamation-circle"></i>
+							<i class="fas fa-check-circle"></i>
+							<small>Mensagem de erro</small>
+						</div>
+					  </div>
+			  
+					  <div class="form-control">
+						<label for="password-confirmation" class="label">Confirmação de senha</label>
+						<input
+						  type="password"
+						  id="password-confirmation" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+						  placeholder="Digite sua senha novamente..."
+						/>
+						<div class="erro">
+							<i class="fas fa-exclamation-circle"></i>
+							<i class="fas fa-check-circle"></i>
+							<small>Mensagem de erro</small>
+						</div>
+					  </div>
+			  
+					  <button type="submit"  class="botao">Enviar</button>
+			</form>
 		  </div>
-   <form id="form" class="form">
-		  <div class="form-control">
-			<label for="fone">Telefone</label>
-			<input
-			  type="text"
-			  id="fone"
-			  placeholder="Digite seu telefone..."
-			/>
-			<i class="fas fa-exclamation-circle"></i>
-			<i class="fas fa-check-circle"></i>
-			<small>Mensagem de erro</small>
-		  </div>
-		  <div class="form-control">
-			<label for="email">Email</label>
-			<input type="text" id="email" placeholder="Digite seu email.." />
-			<i class="fas fa-exclamation-circle"></i>
-			<i class="fas fa-check-circle"></i>
-			<small>Mensagem de erro</small>
-		  </div>
-  
-		  <div class="form-control">
-			<label for="password">Senha</label>
-			<input
-			  type="password"
-			  id="password"
-			  placeholder="Digite sua senha..."
-			/>
-			<i class="fas fa-exclamation-circle"></i>
-			<i class="fas fa-check-circle"></i>
-			<small>Mensagem de erro</small>
-		  </div>
-  
-		  <div class="form-control">
-			<label for="password-confirmation">Confirmação de senha</label>
-			<input
-			  type="password"
-			  id="password-confirmation"
-			  placeholder="Digite sua senha novamente..."
-			/>
-			<i class="fas fa-exclamation-circle"></i>
-			<i class="fas fa-check-circle"></i>
-			<small>Mensagem de erro</small>
-		  </div>
-  
-		  <button type="submit">Enviar</button>
-		</form>
-	  </div>
+	</main>
 		
-			<script
-			  src="https://kit.fontawesome.com/f9e19193d6.js"
-			  crossorigin="anonymous"
-			></script>
-			
-		</main>
-			
 	<footer class="rodape">
-        <p class="rodape__texto">Av. Assis Brasil, 244 Porto Alegre-RS<p>
-        <p class="rodape__texto">Fone:(51) 9 9503-0852<p>
-        <p class="rodape__texto">msctintas@yahoo.com.br<p>
+		<p class="rodape__texto">Av. Assis Brasil, 244 Porto Alegre-RS<p>
+			<p class="rodape__texto">Fone:(51) 9 9503-0852<p>
+			<p class="rodape__texto">msctintas@yahoo.com.br<p>
+			<p class="rodape__texto">copyright ©️2022 msc tintas<p>
     </footer>
+	<script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+	<script src="formulario.js"></script>
 </body>
-
-<script src="formulario.js"></script>
 </html>

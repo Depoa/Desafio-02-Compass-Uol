@@ -1,3 +1,5 @@
+// CAPTURAR ELEMENTOS
+
 const form = document.getElementById("form");
 const name = document.getElementById("name");
 const endereco = document.getElementById("endereco");
@@ -6,11 +8,15 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const passwordConfirmation = document.getElementById("password-confirmation");
 
+// BOTÃO
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   checkInputs();
 });
+
+// CAPTURAR VALOR E COMPARAÇÃO
 
 function checkInputs() {
   const nameValue = name.value;
@@ -22,10 +28,11 @@ function checkInputs() {
 
   if (nameValue === "") {
     setErrorFor(name, "O nome de usuário é obrigatório.");
-  } else {
+  } else if(!verificarNome(nameValue)){
+    setErrorFor(name, "O nome deve ser digitado num formato válido");
+  }else{
     setSuccessFor(name);
-  }
-  if (enderecoValue === "") {
+  }if (enderecoValue === "") {
     setErrorFor(endereco, "O endereço é obrigatório.");
   } else {
     setSuccessFor(endereco);
@@ -89,8 +96,16 @@ function setSuccessFor(input) {
   formControl.className = "form-control success";
 }
 
+//VALIDAÇÕES COM REGEX
+
+function valida(nome){
+  return (/[A-Z][a-z]* [A-Z][a-z]*/);
+  }
+//function verificarNome(nome){
+   // return /^([A-Z][a-zA-Z',.-]+( [a-zA-Z',.-]+)*){2,30}$/.text(nome);
+   // /^([A-Z][a-z].* [A-Z][a-z].*
+//}
+
 function checkEmail(email) {
-  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-    email
-  );
+  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
